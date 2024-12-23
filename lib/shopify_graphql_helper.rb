@@ -2,17 +2,16 @@
 
 require_relative 'shopify_graphql_helper/version'
 
-require "shopify_api"
-
-require 'shopify_graphql_helper/client'
-require 'shopify_graphql_helper/query_resolver'
+require 'shopify_api'
 
 module ShopifyGraphqlHelper
   class Error < StandardError; end
-  
+
+  require 'shopify_graphql_helper/client'
+  require 'shopify_graphql_helper/query_resolver'
+
   # Queries
   require 'shopify_graphql_helper/queries'
 
   # Mutations
-  require 'shopify_graphql_helper/queries'
 end

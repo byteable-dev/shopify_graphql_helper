@@ -3,8 +3,8 @@
 module ShopifyGraphqlHelper
   class QueryResolver
     QUERY_MAP = {
-      products: ShopifyGraphqlHelper::Queries::ProductsQuery,
-      update_product: ShopifyGraphqlHelper::Mutations::UpdateProductMutation
+      products: ::ShopifyGraphqlHelper::Queries::ProductsQuery,
+      update_product: ::ShopifyGraphqlHelper::Mutations::UpdateProductMutation
     }.freeze
 
     def initialize(session)

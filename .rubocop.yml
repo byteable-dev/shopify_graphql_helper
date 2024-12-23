@@ -1,0 +1,40 @@
+AllCops:
+  TargetRubyVersion: 3.2.2
+  NewCops: enable
+
+############### Layout ###############
+
+Layout/FirstArgumentIndentation:
+  Enabled: true
+  EnforcedStyle: consistent
+
+Layout/FirstArrayElementIndentation:
+  Enabled: true
+  EnforcedStyle: consistent
+
+Layout/FirstHashElementIndentation:
+  Enabled: true
+  EnforcedStyle: consistent
+
+############### Metrics ###############
+
+Metrics/MethodLength:
+  Enabled: false
+
+############### Naming ###############
+
+Naming/RescuedExceptionsVariableName:
+  Enabled: true
+  PreferredName: exception
+
+############### Style ###############
+
+Style/Documentation:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: true
+  EnforcedStyle: brackets
+
+Style/FrozenStringLiteralComment:
+  Enabled: true

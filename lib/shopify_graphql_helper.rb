@@ -4,15 +4,16 @@ require_relative 'shopify_graphql_helper/version'
 
 require 'shopify_api'
 
+
+
 module ShopifyGraphqlHelper
   class Error < StandardError; end
+  # Dynamically load all queries
+  Dir[File.join(__dir__, 'shopify_graphql_helper/queries/**/*.rb')].sort.each { |file| require file }
 
-  require 'shopify_graphql_helper/client'
-  require 'shopify_graphql_helper/query_resolver'
-
-  # Queries
-  require 'shopify_graphql_helper/queries/products_query'
-  
-  # Mutations
-  require 'shopify_graphql_helper/mutations/update_product_mutation'
+  # Dynamically load all mutations
+  Dir[File.join(__dir__, 'shopify_graphql_helper/mutations/**/*.rb')].sort.each { |file| require file }
 end
+
+require 'shopify_graphql_helper/client'
+require 'shopify_graphql_helper/query_resolver'

@@ -3,27 +3,40 @@
 module ShopifyGraphqlHelper
   module Queries
     class ProductsQuery
-      QUERY = <<~GRAPHQL
-        query($first: Int!) {
-          products(first: $first) {
-            edges {
-              node {
-                id
-                title
-                variants(first: 10) {
-                  edges {
-                    node {
-                      id
-                      price
-                    }
-                  }
+      QUERY = <<~QUERY
+        query($numProducts: Int!, $cursor: String) {
+          products(first: $numProducts, after: $cursor) {
+            nodes {
+              id
+              title
+              tags
+              variants(first:10) {
+                nodes {
+                  id
+                  title
+                  displayName
+                  sku
+                  price
+                  compareAtPrice
+                }
+              }
+              collections(first: 10, query: "collection_type:smart OR collection_type:custom"){
+                nodes {
+                  id
+                  title
                 }
               }
             }
+            pageInfo{
+              hasPreviousPage
+              hasNextPage
+              startCursor
+              endCursor
+            }
           }
         }
-      GRAPHQL
-
+      QUERY
+      
       def self.query
         QUERY
       end

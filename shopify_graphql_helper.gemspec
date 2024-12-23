@@ -35,6 +35,6 @@ Gem::Specification.new do |spec|
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
-  spec.add_runtime_dependency("shopify_api", ">= 14.7.0", "< 15.0")
+  spec.add_runtime_dependency("shopify_api", ">= 13.4", "< 15.0")
   spec.add_development_dependency("pry")
 end

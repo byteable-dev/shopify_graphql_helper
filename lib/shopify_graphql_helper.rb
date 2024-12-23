@@ -11,7 +11,8 @@ module ShopifyGraphqlHelper
   require 'shopify_graphql_helper/query_resolver'
 
   # Queries
-  require 'shopify_graphql_helper/queries'
-
+  require 'shopify_graphql_helper/queries/products_query'
+  
   # Mutations
+  require 'shopify_graphql_helper/mutations/update_product_mutation'
 end

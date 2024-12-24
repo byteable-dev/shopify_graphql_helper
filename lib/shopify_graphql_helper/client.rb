@@ -2,18 +2,13 @@
 
 module ShopifyGraphqlHelper
   class Client
-    DEFAULT_VARIABLES = {
-      numProducts: 250,
-      cursor: nil
-    }.freeze
-
     attr_reader :session
 
     def initialize(session)
       @session = session
     end
 
-    def query(query:, variables: DEFAULT_VARIABLES)
+    def query(query:, variables: {})
       graphql_client.query(query: query, variables: variables)
     rescue ShopifyAPI::Errors::HttpResponseError => exception
       handle_error(exception)

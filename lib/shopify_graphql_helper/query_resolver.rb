@@ -12,13 +12,18 @@ module ShopifyGraphqlHelper
       product_variant_bulk_update: ShopifyGraphqlHelper::Mutations::ProductVariantBulkUpdateMutation
     }.freeze
 
+    DEFAULT_QUERY_VARIABLES = {
+      numProducts: 250,
+      cursor: nil
+    }.freeze
+
     attr_reader :session
 
     def initialize(session)
       @session = session
     end
 
-    def execute_query(query_key, variables = {})
+    def execute_query(query_key, variables = DEFAULT_QUERY_VARIABLES)
       query_class = QUERIES[query_key]
       raise ArgumentError, "Unknown query key: #{query_key}" unless query_class
 

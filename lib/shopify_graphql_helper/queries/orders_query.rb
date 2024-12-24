@@ -2,7 +2,7 @@
 
 module ShopifyGraphqlHelper
   module Queries
-    class ProductVariantsQuery
+    class OrdersQuery
       QUERY = <<~QUERY
         query($numOrders: Int!, $cursor: String) {
           orders(first: $numOrders, after: $cursor) {

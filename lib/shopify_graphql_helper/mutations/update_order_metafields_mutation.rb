@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module ShopifyGraphqlHelper
-  class Mutations
+  module Mutations
     class UpdateOrderMetafieldsMutation
       MUTATION = <<~QUERY
         mutation updateOrderMetafields($input: OrderInput!) {

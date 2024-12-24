@@ -36,7 +36,7 @@ module ShopifyGraphqlHelper
           }
         }
       QUERY
-      
+
       def self.query
         QUERY
       end

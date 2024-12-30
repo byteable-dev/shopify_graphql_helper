@@ -5,7 +5,8 @@ module ShopifyGraphqlHelper
     QUERIES = {
       shop: ShopifyGraphqlHelper::Queries::ShopQuery,
       products: ShopifyGraphqlHelper::Queries::ProductsQuery,
-      product_variants: ShopifyGraphqlHelper::Queries::ProductVariantsQuery
+      product_variants: ShopifyGraphqlHelper::Queries::ProductVariantsQuery,
+      search_product_variants: ShopifyGraphqlHelper::Queries::SearchProductVariants
     }.freeze
 
     MUTATIONS = {

@@ -7,7 +7,8 @@ module ShopifyGraphqlHelper
       products: ShopifyGraphqlHelper::Queries::ProductsQuery,
       product_variants: ShopifyGraphqlHelper::Queries::ProductVariantsQuery,
       search_product_variants: ShopifyGraphqlHelper::Queries::SearchProductVariants,
-      find_inventory_item: ShopifyGraphqlHelper::Queries::FindInventoryItemQuery
+      find_inventory_item: ShopifyGraphqlHelper::Queries::FindInventoryItemQuery,
+      staff_members: ShopifyGraphqlHelper::Queries::StaffMembersQuery
     }.freeze
 
     MUTATIONS = {

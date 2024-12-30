@@ -11,7 +11,8 @@ module ShopifyGraphqlHelper
 
     MUTATIONS = {
       product_variant_bulk_update: ShopifyGraphqlHelper::Mutations::ProductVariantBulkUpdateMutation,
-      inventory_adjustment: ShopifyGraphqlHelper::Mutations::InventoryAdjustQuantitiesMutation
+      inventory_adjustment: ShopifyGraphqlHelper::Mutations::InventoryAdjustQuantitiesMutation,
+      activate_inventory_item: ShopifyGraphqlHelper::Mutations::ActivateInventoryItemMutation
     }.freeze
 
     DEFAULT_QUERY_VARIABLES = {

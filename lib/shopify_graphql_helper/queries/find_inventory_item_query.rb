@@ -4,7 +4,7 @@ module ShopifyGraphqlHelper
   module Queries
     class FindInventoryItemQuery
       QUERY = <<~QUERY
-        query inventoryItem($id: ID!, $locationId: String!) {
+        query inventoryItem($id: ID!, $locationId: ID!) {
           inventoryItem(id: $id) {
             id
             tracked

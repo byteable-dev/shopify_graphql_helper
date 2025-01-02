@@ -34,14 +34,12 @@ module ShopifyGraphqlHelper
                   }
                 }
               }
-              metafields(first: 5) {
-                edges {
-                  node {
-                    id
-                    namespace
-                    key
-                    value
-                  }
+              metafields(first: 10) {
+                nodes {
+                  id
+                  namespace
+                  key
+                  value
                 }
               }
             }

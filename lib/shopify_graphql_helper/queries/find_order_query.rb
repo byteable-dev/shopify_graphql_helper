@@ -32,7 +32,7 @@ module ShopifyGraphqlHelper
                 }
               }
             }
-            metafields(first: 5) {
+            metafields(first: 10) {
               nodes {
                 id
                 namespace

@@ -9,6 +9,7 @@ module ShopifyGraphqlHelper
       search_product_variants: ShopifyGraphqlHelper::Queries::SearchProductVariants,
       find_inventory_item: ShopifyGraphqlHelper::Queries::FindInventoryItemQuery,
       staff_members: ShopifyGraphqlHelper::Queries::StaffMembersQuery,
+      orders: ShopifyGraphqlHelper::Queries::OrdersQuery,
       find_order: ShopifyGraphqlHelper::Queries::FindOrderQuery
     }.freeze
 
@@ -20,6 +21,7 @@ module ShopifyGraphqlHelper
 
     DEFAULT_QUERY_VARIABLES = {
       numProducts: 250,
+      numOrders: 250,
       cursor: nil
     }.freeze
 

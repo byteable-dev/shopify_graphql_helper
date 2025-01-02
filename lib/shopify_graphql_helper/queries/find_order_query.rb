@@ -33,13 +33,11 @@ module ShopifyGraphqlHelper
               }
             }
             metafields(first: 5) {
-              edges {
-                node {
-                  id
-                  namespace
-                  key
-                  value
-                }
+              nodes {
+                id
+                namespace
+                key
+                value
               }
             }
           }

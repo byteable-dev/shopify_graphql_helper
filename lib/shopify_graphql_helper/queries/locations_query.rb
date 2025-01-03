@@ -6,15 +6,13 @@ module ShopifyGraphqlHelper
       QUERY = <<~QUERY
         query {
           locations(first: 10) {
-            edges {
-              node {
-                id
-                name
-                address {
-                  city
-                  country
-                  countryCode
-                }
+            nodes {
+              id
+              name
+              address {
+                city
+                country
+                countryCode
               }
             }
           }

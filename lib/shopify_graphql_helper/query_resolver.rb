@@ -8,9 +8,10 @@ module ShopifyGraphqlHelper
       product_variants: ShopifyGraphqlHelper::Queries::ProductVariantsQuery,
       search_product_variants: ShopifyGraphqlHelper::Queries::SearchProductVariants,
       find_inventory_item: ShopifyGraphqlHelper::Queries::FindInventoryItemQuery,
+      find_product_variant: ShopifyGraphqlHelper::Queries::FindProductVariantQuery,
+      find_order: ShopifyGraphqlHelper::Queries::FindOrderQuery,
       staff_members: ShopifyGraphqlHelper::Queries::StaffMembersQuery,
       orders: ShopifyGraphqlHelper::Queries::OrdersQuery,
-      find_order: ShopifyGraphqlHelper::Queries::FindOrderQuery,
       locations: ShopifyGraphqlHelper::Queries::LocationsQuery
     }.freeze
 

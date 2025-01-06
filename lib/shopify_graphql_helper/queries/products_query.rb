@@ -18,6 +18,20 @@ module ShopifyGraphqlHelper
                   sku
                   price
                   compareAtPrice
+                  inventoryItem{
+                    id
+                    inventoryLevels(first: 100) {
+                      nodes {
+                        location{
+                          id
+                        }
+                        quantities {
+                          name
+                          quantity
+                        }
+                      }
+                    }
+                  }
                 }
               }
               collections(first: 10, query: "collection_type:smart OR collection_type:custom"){

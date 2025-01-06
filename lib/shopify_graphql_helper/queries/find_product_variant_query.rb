@@ -21,7 +21,7 @@ module ShopifyGraphqlHelper
                   location{
                     id
                   }
-                  quantities {
+                  quantities(names: "available"){
                     name
                     quantity
                   }

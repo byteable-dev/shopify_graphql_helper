@@ -22,6 +22,7 @@ module ShopifyGraphqlHelper
                   id
                   name
                   sku
+                  quantity
                   variant {
                     id
                   }

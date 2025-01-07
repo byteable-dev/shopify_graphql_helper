@@ -11,6 +11,7 @@ module ShopifyGraphqlHelper
               legacyResourceId
               name
               displayFulfillmentStatus
+              displayFinancialStatus
               customer {
                 id
                 firstName

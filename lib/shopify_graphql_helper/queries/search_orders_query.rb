@@ -12,6 +12,7 @@ module ShopifyGraphqlHelper
               name
               displayFulfillmentStatus
               displayFinancialStatus
+              createdAt
               customer {
                 id
                 firstName

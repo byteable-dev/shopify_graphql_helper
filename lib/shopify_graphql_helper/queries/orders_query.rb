@@ -24,13 +24,14 @@ module ShopifyGraphqlHelper
               }
               staffMember{
                 id
-                email
               }
               lineItems(first: 250) {
                 nodes {
                   id
                   name
                   sku
+                  originalTotalSet
+                  totalDiscountSet
                   variant {
                     id
                   }

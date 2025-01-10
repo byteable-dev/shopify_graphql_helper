@@ -25,6 +25,10 @@ module ShopifyGraphqlHelper
                   consentUpdatedAt
                   marketingState
                 }
+                smsMarketingConsent{
+                  consentUpdatedAt
+                  marketingState
+                }
               }
               staffMember{
                 id

@@ -30,8 +30,26 @@ module ShopifyGraphqlHelper
                   id
                   name
                   sku
-                  originalTotalSet
-                  totalDiscountSet
+                  originalTotalSet{
+                    presentmentMoney {
+                      amount
+                      currencyCode
+                    }
+                    shopMoney{
+                      amount
+                      currencyCode
+                    }
+                  }
+                  totalDiscountSet {
+                    presentmentMoney {
+                      amount
+                      currencyCode
+                    }
+                    shopMoney{
+                      amount
+                      currencyCode
+                    }
+                  }
                   variant {
                     id
                   }

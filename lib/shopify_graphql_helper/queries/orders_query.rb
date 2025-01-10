@@ -21,6 +21,10 @@ module ShopifyGraphqlHelper
                 id
                 firstName
                 displayName
+                emailMarketingConsent{
+                  consentUpdatedAt
+                  marketingState
+                }
               }
               staffMember{
                 id

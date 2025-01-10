@@ -30,6 +30,7 @@ module ShopifyGraphqlHelper
                   id
                   name
                   sku
+                  quantity
                   originalTotalSet{
                     presentmentMoney {
                       amount

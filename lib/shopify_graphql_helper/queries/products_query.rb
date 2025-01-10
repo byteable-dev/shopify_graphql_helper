@@ -20,7 +20,7 @@ module ShopifyGraphqlHelper
                   compareAtPrice
                 }
               }
-              collections(first: 10, query: "collection_type:smart OR collection_type:custom"){
+              collections(first: 50, query: "collection_type:smart OR collection_type:custom"){
                 nodes {
                   id
                   title

@@ -11,7 +11,12 @@ module ShopifyGraphqlHelper
               legacyResourceId
               name
               processedAt
+              createdAt
               displayFulfillmentStatus
+              displayFinancialStatus
+              app {
+                id
+              }
               customer {
                 id
                 firstName

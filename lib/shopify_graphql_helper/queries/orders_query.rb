@@ -22,6 +22,10 @@ module ShopifyGraphqlHelper
                 firstName
                 displayName
               }
+              staffMember{
+                id
+                email
+              }
               lineItems(first: 250) {
                 nodes {
                   id

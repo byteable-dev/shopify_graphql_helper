@@ -18,6 +18,9 @@ module ShopifyGraphqlHelper
                   sku
                   price
                   compareAtPrice
+                  product {
+                    id
+                  }
                 }
               }
               collections(first: 50, query: "collection_type:smart OR collection_type:custom"){

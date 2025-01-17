@@ -9,7 +9,6 @@ module ShopifyGraphqlHelper
             id
             legacyResourceId
             name
-            number
             processedAt
             createdAt
             displayFulfillmentStatus

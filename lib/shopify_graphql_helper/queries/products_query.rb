@@ -9,9 +9,12 @@ module ShopifyGraphqlHelper
             nodes {
               id
               title
+              descriptionHtml
               tags
               publishedAt
               handle
+              productType
+              vendor
               media(first: 20){
                 nodes{
                   id
@@ -26,6 +29,8 @@ module ShopifyGraphqlHelper
               variants(first:10) {
                 nodes {
                   id
+                  legacyResourceId
+                  inventoryQuantity
                   title
                   displayName
                   sku

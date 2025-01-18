@@ -11,6 +11,18 @@ module ShopifyGraphqlHelper
               title
               tags
               publishedAt
+              handle
+              media(first: 20){
+                nodes{
+                  id
+                  preview {
+                    image {
+                      id
+                      url
+                    }
+                  }
+                }
+              }
               variants(first:10) {
                 nodes {
                   id

@@ -10,6 +10,7 @@ module ShopifyGraphqlHelper
               id
               title
               tags
+              publishedAt
               variants(first:10) {
                 nodes {
                   id

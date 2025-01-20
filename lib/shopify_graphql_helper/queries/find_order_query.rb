@@ -122,6 +122,7 @@ module ShopifyGraphqlHelper
                 }
                 product {
                   id
+                  legacyResourceId
                 }
                 customAttributes{
                   key

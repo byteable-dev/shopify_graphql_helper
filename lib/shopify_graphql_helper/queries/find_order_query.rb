@@ -95,6 +95,7 @@ module ShopifyGraphqlHelper
               nodes {
                 id
                 name
+                title
                 sku
                 quantity
                 originalTotalSet{

@@ -120,6 +120,8 @@ module ShopifyGraphqlHelper
                   }
                   variant {
                     id
+                    legacyResourceId
+                    title
                   }
                   product {
                     id

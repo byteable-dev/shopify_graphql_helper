@@ -99,6 +99,9 @@ module ShopifyGraphqlHelper
                   title
                   sku
                   quantity
+                  image{
+                    url
+                  }
                   originalUnitPriceSet{
                     presentmentMoney {
                       amount

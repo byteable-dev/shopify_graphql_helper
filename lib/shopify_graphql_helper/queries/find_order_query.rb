@@ -98,6 +98,16 @@ module ShopifyGraphqlHelper
                 title
                 sku
                 quantity
+                originalUnitPriceSet{
+                  presentmentMoney {
+                    amount
+                    currencyCode
+                  }
+                  shopMoney{
+                    amount
+                    currencyCode
+                  }
+                }
                 originalTotalSet{
                   presentmentMoney {
                     amount

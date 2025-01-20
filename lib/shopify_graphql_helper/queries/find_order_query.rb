@@ -13,6 +13,7 @@ module ShopifyGraphqlHelper
             createdAt
             displayFulfillmentStatus
             displayFinancialStatus
+            email
             note
             discountCodes
             currencyCode

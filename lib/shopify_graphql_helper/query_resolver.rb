@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 module ShopifyGraphqlHelper
+  # Resolves and executes GraphQL queries and mutations
   class QueryResolver
+    # Mapping of query keys to their respective classes
     QUERIES = {
       shop: ShopifyGraphqlHelper::Queries::ShopQuery,
       products: ShopifyGraphqlHelper::Queries::ProductsQuery,
@@ -33,10 +35,20 @@ module ShopifyGraphqlHelper
 
     attr_reader :session
 
+    # @param session [ShopifyAPI::Auth::Session] the Shopify session object
     def initialize(session)
       @session = session
     end
 
+    # Executes a query
+    #
+    # @param query_key [Symbol] the key identifying the query
+    # @param variables [Hash] the variables for the query
+    # @return [GraphQL::Client::Response] the API response
+    # @raise [ArgumentError] if the query key is not found
+    #
+    # @example Executing a products query
+    #   resolver.execute_query(:products, { first: 10 })
     def execute_query(query_key, variables = DEFAULT_QUERY_VARIABLES)
       query_class = QUERIES[query_key]
       raise ArgumentError, "Unknown query key: #{query_key}" unless query_class
@@ -45,6 +57,15 @@ module ShopifyGraphqlHelper
       client.query(query: query, variables: variables)
     end
 
+    # Executes a mutation
+    #
+    # @param mutation_key [Symbol] the key identifying the mutation
+    # @param variables [Hash] the variables for the mutation
+    # @return [GraphQL::Client::Response] the API response
+    # @raise [ArgumentError] if the mutation key is not found
+    #
+    # @example Executing a product update mutation
+    #   resolver.execute_mutation(:update_product, { input: { id: "gid://shopify/Product/123", title: "Updated Title" } })
     def execute_mutation(mutation_key, variables = {})
       mutation_class = MUTATIONS[mutation_key]
       raise ArgumentError, "Unknown mutation key: #{mutation_key}" unless mutation_class

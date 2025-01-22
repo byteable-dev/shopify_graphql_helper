@@ -10,11 +10,13 @@ module ShopifyGraphqlHelper
             primaryDomain{
               url
             }
+            billingAddress{
+              phone
+              zip
+            }
             myshopifyDomain
-            phone
             email
             shopOwnerName
-            zip
             currencyCode
             ianaTimezone
           }

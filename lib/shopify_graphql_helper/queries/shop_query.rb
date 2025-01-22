@@ -10,7 +10,6 @@ module ShopifyGraphqlHelper
             primaryDomain{
               url
             }
-            moneyFormat
             myshopifyDomain
             phone
             email

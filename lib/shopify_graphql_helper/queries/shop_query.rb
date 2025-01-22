@@ -7,6 +7,13 @@ module ShopifyGraphqlHelper
         query {
           shop {
             name
+            primaryDomain
+            moneyFormat
+            myshopifyDomain
+            phone
+            email
+            shopOwnerName
+            zip
             currencyCode
             ianaTimezone
           }

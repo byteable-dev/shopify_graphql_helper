@@ -7,7 +7,9 @@ module ShopifyGraphqlHelper
         query {
           shop {
             name
-            primaryDomain
+            primaryDomain{
+              url
+            }
             moneyFormat
             myshopifyDomain
             phone

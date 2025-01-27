@@ -9,6 +9,7 @@ module ShopifyGraphqlHelper
       search_product_variants: ShopifyGraphqlHelper::Queries::SearchProductVariants,
       search_orders: ShopifyGraphqlHelper::Queries::SearchOrdersQuery,
       find_inventory_item: ShopifyGraphqlHelper::Queries::FindInventoryItemQuery,
+      find_product: ShopifyGraphqlHelper::Queries::FindProductQuery,
       find_product_variant: ShopifyGraphqlHelper::Queries::FindProductVariantQuery,
       find_order: ShopifyGraphqlHelper::Queries::FindOrderQuery,
       find_location: ShopifyGraphqlHelper::Queries::FindLocationQuery,

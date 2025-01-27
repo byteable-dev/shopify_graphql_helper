@@ -10,6 +10,9 @@ module ShopifyGraphqlHelper
               node {
                 id
                 sku
+                product{
+                  id
+                }
                 inventoryItem{
                   id
                   inventoryLevels(first: 100) {

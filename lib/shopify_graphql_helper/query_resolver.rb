@@ -19,6 +19,7 @@ module ShopifyGraphqlHelper
     }.freeze
 
     MUTATIONS = {
+      product_create: ShopifyGraphqlHelper::Mutations::ProductCreateMutation,
       product_update: ShopifyGraphqlHelper::Mutations::ProductUpdateMutation,
       product_variant_bulk_update: ShopifyGraphqlHelper::Mutations::ProductVariantBulkUpdateMutation,
       inventory_adjustment: ShopifyGraphqlHelper::Mutations::InventoryAdjustQuantitiesMutation,

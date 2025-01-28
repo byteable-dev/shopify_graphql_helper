@@ -36,6 +36,11 @@ module ShopifyGraphqlHelper
                   sku
                   price
                   compareAtPrice
+                  inventoryItem{
+                    id
+                    legacyResourceId
+                    sku
+                  }
                   product {
                     id
                   }

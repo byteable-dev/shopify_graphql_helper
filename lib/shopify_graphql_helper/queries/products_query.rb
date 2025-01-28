@@ -40,6 +40,10 @@ module ShopifyGraphqlHelper
                     id
                     legacyResourceId
                     sku
+                    unitCost{
+                      amount
+                      currencyCode
+                    }
                   }
                   product {
                     id

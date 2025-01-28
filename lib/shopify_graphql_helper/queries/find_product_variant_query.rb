@@ -30,6 +30,7 @@ module ShopifyGraphqlHelper
                 nodes {
                   location{
                     id
+                    legacyResourceId
                   }
                   quantities(names: "available"){
                     name

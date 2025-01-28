@@ -45,7 +45,7 @@ module ShopifyGraphqlHelper
                       amount
                       currencyCode
                     }
-                    inventoryLevels(first: 50){
+                    inventoryLevels(first: 10){
                       nodes {
                         id
                         location{

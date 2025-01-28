@@ -27,7 +27,8 @@ module ShopifyGraphqlHelper
       inventory_adjustment: ShopifyGraphqlHelper::Mutations::InventoryAdjustQuantitiesMutation,
       activate_inventory_item: ShopifyGraphqlHelper::Mutations::ActivateInventoryItemMutation,
       update_order_metafield: ShopifyGraphqlHelper::Mutations::UpdateOrderMetafieldsMutation,
-      set_metafield: ShopifyGraphqlHelper::Mutations::SetMetafieldMutation
+      set_metafield: ShopifyGraphqlHelper::Mutations::SetMetafieldMutation,
+      fulfillment_create: ShopifyGraphqlHelper::Mutations::FulfillmentCreateMutation
     }.freeze
 
     DEFAULT_QUERY_VARIABLES = {

@@ -15,6 +15,7 @@ module ShopifyGraphqlHelper
       find_location: ShopifyGraphqlHelper::Queries::FindLocationQuery,
       staff_members: ShopifyGraphqlHelper::Queries::StaffMembersQuery,
       orders: ShopifyGraphqlHelper::Queries::OrdersQuery,
+      fulfillment_orders: ShopifyGraphqlHelper::Queries::FulfillmentOrdersQuery,
       locations: ShopifyGraphqlHelper::Queries::LocationsQuery
     }.freeze
 

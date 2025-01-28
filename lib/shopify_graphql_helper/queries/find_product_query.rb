@@ -48,6 +48,7 @@ module ShopifyGraphqlHelper
                     id
                     location{
                       id
+                      legacyResourceId
                     }
                     quantities(names: "available") {
                       name

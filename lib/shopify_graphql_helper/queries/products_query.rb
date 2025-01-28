@@ -45,6 +45,16 @@ module ShopifyGraphqlHelper
                       amount
                       currencyCode
                     }
+                    inventoryLevel{
+                      id
+                      location{
+                        id
+                      }
+                      quantities(names: "available") {
+                        name
+                        quantity
+                      }
+                    }
                   }
                   product {
                     id

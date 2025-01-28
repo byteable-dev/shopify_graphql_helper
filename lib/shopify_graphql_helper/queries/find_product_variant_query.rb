@@ -10,12 +10,22 @@ module ShopifyGraphqlHelper
             title
             displayName
             sku
+            barcode
             price
             compareAtPrice
             availableForSale
             createdAt
+            product {
+              id
+            }
             inventoryItem{
               id
+              legacyResourceId
+              sku
+              unitCost{
+                amount
+                currencyCode
+              }
               inventoryLevels(first: 100) {
                 nodes {
                   location{

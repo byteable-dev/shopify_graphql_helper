@@ -45,18 +45,6 @@ module ShopifyGraphqlHelper
                       amount
                       currencyCode
                     }
-                    inventoryLevels(first: 10){
-                      nodes {
-                        id
-                        location{
-                          id
-                        }
-                        quantities(names: "available") {
-                          name
-                          quantity
-                        }
-                      }
-                    }
                   }
                   product {
                     id

@@ -33,6 +33,7 @@ module ShopifyGraphqlHelper
                 title
                 displayName
                 sku
+                barcode
                 price
                 compareAtPrice
                 inventoryItem{

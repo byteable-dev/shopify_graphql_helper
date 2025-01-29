@@ -148,6 +148,16 @@ module ShopifyGraphqlHelper
                   }
                 }
               }
+              refunds(first: 10){
+                id
+                legacyResourceId
+                createdAt
+                note
+                order {
+                  id
+                  legacyResourceId
+                }
+              }
               metafields(first: 10) {
                 nodes {
                   id

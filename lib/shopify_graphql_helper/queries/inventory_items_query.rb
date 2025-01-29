@@ -19,6 +19,16 @@ module ShopifyGraphqlHelper
               inventoryLevels(first: 50){
                 nodes{
                   id
+                  item{
+                    id
+                    legacyResourceId
+                    sku
+                    variant{
+                      id
+                      legacyResourceId
+                      sku
+                    }
+                  }
                   location{
                     id
                     legacyResourceId

@@ -92,6 +92,7 @@ module ShopifyGraphqlHelper
               id
               email
             }
+            paymentGatewayNames
             lineItems(first: 250) {
               nodes {
                 id

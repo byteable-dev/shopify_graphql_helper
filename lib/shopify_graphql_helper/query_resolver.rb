@@ -16,7 +16,8 @@ module ShopifyGraphqlHelper
       staff_members: ShopifyGraphqlHelper::Queries::StaffMembersQuery,
       orders: ShopifyGraphqlHelper::Queries::OrdersQuery,
       fulfillment_orders: ShopifyGraphqlHelper::Queries::FulfillmentOrdersQuery,
-      locations: ShopifyGraphqlHelper::Queries::LocationsQuery
+      locations: ShopifyGraphqlHelper::Queries::LocationsQuery,
+      inventory_items: ShopifyGraphqlHelper::Queries::InventoryItemsQuery
     }.freeze
 
     MUTATIONS = {

@@ -16,6 +16,7 @@ module ShopifyGraphqlHelper
               displayFulfillmentStatus
               displayFinancialStatus
               createdAt
+              processedAt
               totalPriceSet{
                 presentmentMoney {
                   amount

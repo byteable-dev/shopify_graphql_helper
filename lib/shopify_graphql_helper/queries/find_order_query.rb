@@ -161,6 +161,22 @@ module ShopifyGraphqlHelper
                 nodes{
                   id
                   quantity
+                  lineItem{
+                    id
+                    taxLines(first: 10){
+                      rate
+                      priceSet{
+                        presentmentMoney {
+                          amount
+                          currencyCode
+                        }
+                        shopMoney{
+                          amount
+                          currencyCode
+                        }
+                      }
+                    }
+                  }
                   priceSet{
                     presentmentMoney {
                       amount

@@ -210,9 +210,11 @@ module ShopifyGraphqlHelper
                   }
                 }
                 transactions(first: 20){
-                  id  
-                  kind
-                  gateway
+                  nodes{
+                    id  
+                    kind
+                    gateway
+                  }
                 }
               }
               taxLines{

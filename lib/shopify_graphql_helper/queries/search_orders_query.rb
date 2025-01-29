@@ -163,6 +163,7 @@ module ShopifyGraphqlHelper
                     quantity
                     lineItem{
                       id
+                      sku
                       taxLines(first: 10){
                         rate
                         priceSet{

@@ -164,6 +164,33 @@ module ShopifyGraphqlHelper
                     lineItem{
                       id
                       sku
+                      quantity
+                      customAttributes{
+                        key
+                        value
+                      }
+                      discountAllocations{
+                        allocatedAmountSet{
+                          presentmentMoney {
+                            amount
+                            currencyCode
+                          }
+                          shopMoney{
+                            amount
+                            currencyCode
+                          }
+                        }
+                      }
+                      originalUnitPriceSet{
+                        presentmentMoney {
+                          amount
+                          currencyCode
+                        }
+                        shopMoney{
+                          amount
+                          currencyCode
+                        }
+                      }
                       taxLines(first: 10){
                         rate
                         priceSet{

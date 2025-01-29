@@ -209,6 +209,11 @@ module ShopifyGraphqlHelper
                     }
                   }
                 }
+                transactions(first: 20){
+                  id  
+                  kind
+                  gateway
+                }
               }
               taxLines{
                 priceSet{

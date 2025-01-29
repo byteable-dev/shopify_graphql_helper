@@ -157,6 +157,57 @@ module ShopifyGraphqlHelper
                   id
                   legacyResourceId
                 }
+                refundLineItems(first: 20){
+                  nodes{
+                    id
+                    quantity
+                    priceSet{
+                      presentmentMoney {
+                        amount
+                        currencyCode
+                      }
+                      shopMoney{
+                        amount
+                        currencyCode
+                      }
+                    }
+                    totalTaxSet{
+                      presentmentMoney {
+                        amount
+                        currencyCode
+                      }
+                      shopMoney{
+                        amount
+                        currencyCode
+                      }
+                    }
+                    subtotalSet{
+                      presentmentMoney {
+                        amount
+                        currencyCode
+                      }
+                      shopMoney{
+                        amount
+                        currencyCode
+                      }
+                    }
+                  }
+                }
+              }
+              taxLines{
+                priceSet{
+                  presentmentMoney {
+                    amount
+                    currencyCode
+                  }
+                  shopMoney{
+                    amount
+                    currencyCode
+                  }
+                }
+                rate
+                title
+                channelLiable
               }
               metafields(first: 10) {
                 nodes {

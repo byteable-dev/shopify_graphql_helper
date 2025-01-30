@@ -27,6 +27,36 @@ module ShopifyGraphqlHelper
                   currencyCode
                 }
               }
+              totalDiscountsSet{
+                presentmentMoney {
+                  amount
+                  currencyCode
+                }
+                shopMoney{
+                  amount
+                  currencyCode
+                }
+              }
+              totalRefundedSet{
+                presentmentMoney {
+                  amount
+                  currencyCode
+                }
+                shopMoney{
+                  amount
+                  currencyCode
+                }
+              }
+              subtotalPriceSet{
+                presentmentMoney {
+                  amount
+                  currencyCode
+                }
+                shopMoney{
+                  amount
+                  currencyCode
+                }
+              }
               totalTaxSet{
                 presentmentMoney {
                   amount

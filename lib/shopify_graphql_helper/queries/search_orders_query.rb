@@ -123,6 +123,18 @@ module ShopifyGraphqlHelper
                       currencyCode
                     }
                   }
+                  discountAllocations{
+                    allocatedAmountSet{
+                      presentmentMoney {
+                        amount
+                        currencyCode
+                      }
+                      shopMoney{
+                        amount
+                        currencyCode
+                      }
+                    }
+                  }
                   totalDiscountSet {
                     presentmentMoney {
                       amount
@@ -131,6 +143,19 @@ module ShopifyGraphqlHelper
                     shopMoney{
                       amount
                       currencyCode
+                    }
+                  }
+                  taxLines(first: 10){
+                    rate
+                    priceSet{
+                      presentmentMoney {
+                        amount
+                        currencyCode
+                      }
+                      shopMoney{
+                        amount
+                        currencyCode
+                      }
                     }
                   }
                   variant {
@@ -239,7 +264,7 @@ module ShopifyGraphqlHelper
                 }
                 transactions(first: 20){
                   nodes{
-                    id  
+                    id#{'  '}
                     kind
                     gateway
                   }

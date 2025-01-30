@@ -108,6 +108,13 @@ module ShopifyGraphqlHelper
                 zip
                 countryCode
               }
+              shippingLines(first: 10){
+                nodes{
+                  id
+                  phone
+                  title
+                }
+              }
               app {
                 id
               }

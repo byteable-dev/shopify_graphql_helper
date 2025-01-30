@@ -5,7 +5,7 @@ module ShopifyGraphqlHelper
     class SearchOrdersQuery
       QUERY = <<~QUERY
         query($query: String!) {
-          orders(first: 100, query: $query) {
+          orders(first: 10, query: $query) {
             nodes {
               id
               legacyResourceId
@@ -93,7 +93,7 @@ module ShopifyGraphqlHelper
                 email
               }
               paymentGatewayNames
-              lineItems(first: 250) {
+              lineItems(first: 25) {
                 nodes {
                   id
                   name

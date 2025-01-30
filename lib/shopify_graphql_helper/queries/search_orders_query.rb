@@ -11,6 +11,7 @@ module ShopifyGraphqlHelper
               legacyResourceId
               name
               email
+              phone
               note
               currencyCode
               displayFulfillmentStatus

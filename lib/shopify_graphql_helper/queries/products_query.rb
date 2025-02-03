@@ -37,6 +37,31 @@ module ShopifyGraphqlHelper
                   barcode
                   price
                   compareAtPrice
+                  media(first: 10){
+                    nodes{
+                      id
+                      mediaContentType
+                      preview {
+                        image {
+                          id
+                          url
+                        }
+                      }
+                    }
+                  }
+                  metafields(first: 20){
+                    nodes{
+                      id
+                      legacyResourceId
+                      key
+                      value
+                      type
+                      namespace
+                      ownerType
+                      description
+                      jsonValue
+                    }
+                  }
                   inventoryItem{
                     id
                     legacyResourceId

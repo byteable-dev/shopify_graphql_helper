@@ -16,7 +16,7 @@ module ShopifyGraphqlHelper
               productType
               vendor
               status
-              productOptions(first: 50){
+              options(first: 50){
                 id
                 name
                 position

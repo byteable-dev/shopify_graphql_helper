@@ -18,6 +18,8 @@ module ShopifyGraphqlHelper
               media(first: 20){
                 nodes{
                   id
+                  alt
+                  mediaContentType
                   preview {
                     image {
                       id
@@ -40,6 +42,7 @@ module ShopifyGraphqlHelper
                   media(first: 10){
                     nodes{
                       id
+                      alt
                       mediaContentType
                       preview {
                         image {

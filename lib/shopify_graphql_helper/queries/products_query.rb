@@ -15,6 +15,17 @@ module ShopifyGraphqlHelper
               handle
               productType
               vendor
+              status
+              productOptions(first: 50){
+                id
+                name
+                position
+                values
+                linkedMetafield{
+                  key
+                  namespace
+                }
+              }
               media(first: 20){
                 nodes{
                   id

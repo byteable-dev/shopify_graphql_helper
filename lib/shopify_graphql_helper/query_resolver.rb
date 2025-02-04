@@ -23,6 +23,7 @@ module ShopifyGraphqlHelper
     MUTATIONS = {
       product_create: ShopifyGraphqlHelper::Mutations::ProductCreateMutation,
       product_update: ShopifyGraphqlHelper::Mutations::ProductUpdateMutation,
+      product_variant_create: ShopifyGraphqlHelper::Mutations::ProductVariantCreateMutation,
       product_variant_bulk_update: ShopifyGraphqlHelper::Mutations::ProductVariantBulkUpdateMutation,
       product_variant_bulk_create: ShopifyGraphqlHelper::Mutations::ProductVariantBulkCreateMutation,
       inventory_item_update: ShopifyGraphqlHelper::Mutations::InventoryItemUpdateMutation,

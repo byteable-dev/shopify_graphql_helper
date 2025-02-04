@@ -50,6 +50,14 @@ module ShopifyGraphqlHelper
                   barcode
                   price
                   compareAtPrice
+                  selectedOptions{
+                    name
+                    value
+                    optionValue{
+                      id
+                      name
+                    }
+                  }
                   media(first: 10){
                     nodes{
                       id
@@ -80,6 +88,7 @@ module ShopifyGraphqlHelper
                     id
                     legacyResourceId
                     sku
+                    tracked
                     unitCost{
                       amount
                       currencyCode

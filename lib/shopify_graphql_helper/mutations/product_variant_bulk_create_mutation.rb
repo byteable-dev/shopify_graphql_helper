@@ -5,19 +5,32 @@ module ShopifyGraphqlHelper
     class ProductVariantBulkCreateMutation
       MUTATION = <<~QUERY
         mutation productVariantsBulkCreate($productId: ID!, $variants: [ProductVariantsBulkInput!]!) {
-          productVariantsBulkUpdate(productId: $productId, variants: $variants) {
+          productVariantsBulkCreate(productId: $productId, variants: $variants) {
+            userErrors {
+              field
+              message
+            }
             product {
               id
+              options {
+                id
+                name
+                values
+                position
+                optionValues {
+                  id
+                  name
+                  hasVariants
+                }
+              }
             }
             productVariants {
               id
               title
-              price
-              compareAtPrice
-            }
-            userErrors {
-              field
-              message
+              selectedOptions {
+                name
+                value
+              }
             }
           }
         }

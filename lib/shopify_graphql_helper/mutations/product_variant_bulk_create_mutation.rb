@@ -4,8 +4,8 @@ module ShopifyGraphqlHelper
   module Mutations
     class ProductVariantBulkCreateMutation
       MUTATION = <<~QUERY
-        mutation productVariantsBulkCreate($productId: ID!, $variants: [ProductVariantsBulkInput!]!) {
-          productVariantsBulkCreate(productId: $productId, variants: $variants) {
+        mutation productVariantsBulkCreate($productId: ID!, $strategy: ProductVariantsBulkCreateStrategy, $variants: [ProductVariantsBulkInput!]!) {
+          productVariantsBulkCreate(productId: $productId, strategy: $strategy, variants: $variants) {
             userErrors {
               field
               message

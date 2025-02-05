@@ -19,13 +19,12 @@ module ShopifyGraphqlHelper
                   hasVariants
                 }
               }
-            }
-            productVariants {
-              id
-              title
-              selectedOptions {
-                name
-                value
+              variants(first:3){
+                nodes{
+                  id
+                  sku
+                  price
+                }
               }
             }
             userErrors {

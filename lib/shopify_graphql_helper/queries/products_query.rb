@@ -89,11 +89,24 @@ module ShopifyGraphqlHelper
                     legacyResourceId
                     sku
                     tracked
+                    countryCodeOfOrigin
+                    duplicateSkuCount
+                    createdAt
+                    provinceCodeOfOrigin
+                    measurement{
+                      id
+                      weight{
+                        unit
+                        value
+                      }
+                    }
                     unitCost{
                       amount
                       currencyCode
                     }
                   }
+                  inventoryPolicy
+                  inventoryQuantity
                   product {
                     id
                   }

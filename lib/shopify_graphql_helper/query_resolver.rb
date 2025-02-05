@@ -13,6 +13,7 @@ module ShopifyGraphqlHelper
       find_product_variant: ShopifyGraphqlHelper::Queries::FindProductVariantQuery,
       find_order: ShopifyGraphqlHelper::Queries::FindOrderQuery,
       find_location: ShopifyGraphqlHelper::Queries::FindLocationQuery,
+      find_collection_by_title: ShopifyGraphqlHelper::Queries::FindCollectionByTitleQuery,
       staff_members: ShopifyGraphqlHelper::Queries::StaffMembersQuery,
       orders: ShopifyGraphqlHelper::Queries::OrdersQuery,
       fulfillment_orders: ShopifyGraphqlHelper::Queries::FulfillmentOrdersQuery,

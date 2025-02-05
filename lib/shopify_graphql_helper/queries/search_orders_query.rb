@@ -317,7 +317,7 @@ module ShopifyGraphqlHelper
                 }
                 transactions(first: 20){
                   nodes{
-                    id#{'  '}
+                    id
                     kind
                     gateway
                   }

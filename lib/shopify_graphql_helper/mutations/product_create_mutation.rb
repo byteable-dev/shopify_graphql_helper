@@ -20,6 +20,14 @@ module ShopifyGraphqlHelper
                 }
               }
             }
+            productVariants {
+              id
+              title
+              selectedOptions {
+                name
+                value
+              }
+            }
             userErrors {
               field
               message

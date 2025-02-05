@@ -12,6 +12,14 @@ module ShopifyGraphqlHelper
               handle
               updatedAt
               sortOrder
+              ruleSet{
+                appliedDisjunctively
+                rules{
+                  column
+                  relation
+                  condition
+                }
+              }
             }
           }
         }

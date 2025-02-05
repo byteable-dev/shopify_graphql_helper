@@ -16,6 +16,7 @@ module ShopifyGraphqlHelper
               productType
               vendor
               status
+              templateSuffix
               options(first: 50){
                 id
                 name
@@ -37,6 +38,19 @@ module ShopifyGraphqlHelper
                       url
                     }
                   }
+                }
+              }
+              metafields(first: 20){
+                nodes{
+                  id
+                  legacyResourceId
+                  key
+                  value
+                  type
+                  namespace
+                  ownerType
+                  description
+                  jsonValue
                 }
               }
               variants(first:10) {

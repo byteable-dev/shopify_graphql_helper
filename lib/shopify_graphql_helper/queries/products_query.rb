@@ -107,6 +107,8 @@ module ShopifyGraphqlHelper
                   }
                   inventoryPolicy
                   inventoryQuantity
+                  taxable
+                  taxCode
                   product {
                     id
                   }

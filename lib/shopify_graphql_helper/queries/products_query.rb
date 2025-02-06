@@ -107,6 +107,7 @@ module ShopifyGraphqlHelper
                     duplicateSkuCount
                     createdAt
                     provinceCodeOfOrigin
+                    requiresShipping
                     measurement{
                       id
                       weight{

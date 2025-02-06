@@ -19,6 +19,14 @@ module ShopifyGraphqlHelper
                   hasVariants
                 }
               }
+              metafields(first: 20) {
+                nodes {
+                  id
+                  namespace
+                  key
+                  value
+                }
+              }
               variants(first:3){
                 nodes{
                   id

@@ -17,6 +17,7 @@ module ShopifyGraphqlHelper
               vendor
               status
               templateSuffix
+              hasOutOfStockVariants
               options(first: 50){
                 id
                 name
@@ -58,6 +59,7 @@ module ShopifyGraphqlHelper
                   id
                   legacyResourceId
                   inventoryQuantity
+                  inventoryPolicy
                   title
                   displayName
                   sku

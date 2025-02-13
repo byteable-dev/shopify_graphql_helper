@@ -10,8 +10,23 @@ module ShopifyGraphqlHelper
               node {
                 id
                 sku
+                selectedOptions {
+                  name
+                  value
+                }
                 product{
                   id
+                  options(first: 20) {
+                    id
+                    position
+                    name
+                    values
+                    optionValues {
+                      id
+                      name
+                      hasVariants
+                    }
+                  }
                 }
                 inventoryItem{
                   id

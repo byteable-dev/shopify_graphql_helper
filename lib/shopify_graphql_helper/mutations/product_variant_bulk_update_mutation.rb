@@ -19,6 +19,18 @@ module ShopifyGraphqlHelper
                   namespace
                   key
                   value
+                  definition{
+                    access
+                    capabilities
+                    type{
+                      category
+                      name
+                      supportedValidations{
+                        name
+                        type
+                      }
+                    }
+                  }
                 }
               }
             }

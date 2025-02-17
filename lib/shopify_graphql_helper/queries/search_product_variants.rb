@@ -50,6 +50,18 @@ module ShopifyGraphqlHelper
                     ownerType
                     description
                     jsonValue
+                    definition{
+                      access
+                      capabilities
+                      type{
+                        category
+                        name
+                        supportedValidations{
+                          name
+                          type
+                        }
+                      }
+                    }
                   }
                 }
                 product{

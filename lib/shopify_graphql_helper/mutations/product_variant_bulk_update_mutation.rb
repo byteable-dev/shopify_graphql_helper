@@ -20,8 +20,6 @@ module ShopifyGraphqlHelper
                   key
                   value
                   definition{
-                    access
-                    capabilities
                     type{
                       category
                       name
@@ -29,6 +27,11 @@ module ShopifyGraphqlHelper
                         name
                         type
                       }
+                    }
+                    validations{
+                      name
+                      type
+                      value
                     }
                   }
                 }

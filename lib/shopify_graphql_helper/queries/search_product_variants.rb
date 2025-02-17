@@ -14,6 +14,19 @@ module ShopifyGraphqlHelper
                   name
                   value
                 }
+                metafields(first: 20){
+                  nodes{
+                    id
+                    legacyResourceId
+                    key
+                    value
+                    type
+                    namespace
+                    ownerType
+                    description
+                    jsonValue
+                  }
+                }
                 product{
                   id
                   options(first: 20) {

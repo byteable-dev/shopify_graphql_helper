@@ -9,10 +9,35 @@ module ShopifyGraphqlHelper
             edges {
               node {
                 id
+                legacyResourceId
+                inventoryQuantity
+                inventoryPolicy
+                title
+                displayName
                 sku
-                selectedOptions {
+                barcode
+                price
+                compareAtPrice
+                selectedOptions{
                   name
                   value
+                  optionValue{
+                    id
+                    name
+                  }
+                }
+                media(first: 10){
+                  nodes{
+                    id
+                    alt
+                    mediaContentType
+                    preview {
+                      image {
+                        id
+                        url
+                      }
+                    }
+                  }
                 }
                 metafields(first: 20){
                   nodes{

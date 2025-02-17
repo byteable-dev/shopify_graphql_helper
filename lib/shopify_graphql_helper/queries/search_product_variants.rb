@@ -51,6 +51,7 @@ module ShopifyGraphqlHelper
                     description
                     jsonValue
                     definition{
+                      name
                       type{
                         category
                         name

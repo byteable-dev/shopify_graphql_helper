@@ -4,8 +4,8 @@ module ShopifyGraphqlHelper
   module Queries
     class SearchProductVariantMetafieldDefiniations
       QUERY = <<~QUERY
-        query {
-          metafieldDefinitions(first: 100, ownerType: PRODUCTVARIANT) {
+        query($query: String!) {
+          metafieldDefinitions(first: 100, ownerType: PRODUCTVARIANT, query: $query) {
             nodes {
               id
               name

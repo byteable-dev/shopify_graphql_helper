@@ -35,7 +35,8 @@ module ShopifyGraphqlHelper
       update_order_metafield: ShopifyGraphqlHelper::Mutations::UpdateOrderMetafieldsMutation,
       set_metafield: ShopifyGraphqlHelper::Mutations::SetMetafieldMutation,
       fulfillment_create: ShopifyGraphqlHelper::Mutations::FulfillmentCreateMutation,
-      collection_create: ShopifyGraphqlHelper::Mutations::CollectionCreateMutation
+      collection_create: ShopifyGraphqlHelper::Mutations::CollectionCreateMutation,
+      metafield_definition_create:  ShopifyGraphqlHelper::Mutations::MetafieldDefinitionCreateMutation
     }.freeze
 
     DEFAULT_QUERY_VARIABLES = {

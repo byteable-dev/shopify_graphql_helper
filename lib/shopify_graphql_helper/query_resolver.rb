@@ -19,7 +19,8 @@ module ShopifyGraphqlHelper
       orders: ShopifyGraphqlHelper::Queries::OrdersQuery,
       fulfillment_orders: ShopifyGraphqlHelper::Queries::FulfillmentOrdersQuery,
       locations: ShopifyGraphqlHelper::Queries::LocationsQuery,
-      inventory_items: ShopifyGraphqlHelper::Queries::InventoryItemsQuery
+      inventory_items: ShopifyGraphqlHelper::Queries::InventoryItemsQuery,
+      search_product_variant_metfeild_definitions: ShopifyGraphqlHelper::Queries::SearchProductVariantMetafieldDefiniations
     }.freeze
 
     MUTATIONS = {

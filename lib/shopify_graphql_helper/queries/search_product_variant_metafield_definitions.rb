@@ -6,9 +6,23 @@ module ShopifyGraphqlHelper
       QUERY = <<~QUERY
         query($query: String!) {
           metafieldDefinitions(first: 100, ownerType: PRODUCTVARIANT, query: $query) {
-            edges {
-              node {
-                name
+            nodes {
+              id
+              name
+              description
+              key
+              namespace
+              ownerType
+              metafields(first: 20){
+                nodes{
+                  id
+                  legacyResourceId
+                  key
+                  value
+                  type
+                  namespace
+                  ownerType
+                }
               }
             }
           }

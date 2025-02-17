@@ -14,6 +14,13 @@ module ShopifyGraphqlHelper
               title
               price
               compareAtPrice
+              metafields(first: 20) {
+                nodes {
+                  namespace
+                  key
+                  value
+                }
+              }
             }
             userErrors {
               field

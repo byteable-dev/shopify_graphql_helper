@@ -84,6 +84,25 @@ module ShopifyGraphqlHelper
                 }
                 inventoryItem{
                   id
+                  legacyResourceId
+                  sku
+                  tracked
+                  countryCodeOfOrigin
+                  duplicateSkuCount
+                  createdAt
+                  provinceCodeOfOrigin
+                  requiresShipping
+                  measurement{
+                    id
+                    weight{
+                      unit
+                      value
+                    }
+                  }
+                  unitCost{
+                    amount
+                    currencyCode
+                  }
                   inventoryLevels(first: 100) {
                     nodes {
                       location{

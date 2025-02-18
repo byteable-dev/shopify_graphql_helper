@@ -32,6 +32,20 @@ module ShopifyGraphqlHelper
                   id
                   sku
                   price
+                  inventoryItem{
+                    id
+                    inventoryLevels(first: 30) {
+                      nodes {
+                        location{
+                          id
+                        }
+                        quantities(names: "available") {
+                          name
+                          quantity
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }

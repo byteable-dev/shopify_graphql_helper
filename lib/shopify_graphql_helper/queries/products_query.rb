@@ -121,6 +121,17 @@ module ShopifyGraphqlHelper
                       amount
                       currencyCode
                     }
+                    inventoryLevels(first: 30) {
+                      nodes {
+                        location{
+                          id
+                        }
+                        quantities(names: "available") {
+                          name
+                          quantity
+                        }
+                      }
+                    }
                   }
                   inventoryPolicy
                   inventoryQuantity

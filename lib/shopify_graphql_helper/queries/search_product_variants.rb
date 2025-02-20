@@ -105,6 +105,7 @@ module ShopifyGraphqlHelper
                   }
                   inventoryLevels(first: 100) {
                     nodes {
+                      id
                       location{
                         id
                       }

@@ -6,6 +6,7 @@ module ShopifyGraphqlHelper
       shop: ShopifyGraphqlHelper::Queries::ShopQuery,
       products: ShopifyGraphqlHelper::Queries::ProductsQuery,
       product_variants: ShopifyGraphqlHelper::Queries::ProductVariantsQuery,
+      files: ShopifyGraphqlHelper::Queries::FilesQuery,
       search_product_variants: ShopifyGraphqlHelper::Queries::SearchProductVariants,
       search_orders: ShopifyGraphqlHelper::Queries::SearchOrdersQuery,
       find_inventory_item: ShopifyGraphqlHelper::Queries::FindInventoryItemQuery,
@@ -36,7 +37,7 @@ module ShopifyGraphqlHelper
       set_metafield: ShopifyGraphqlHelper::Mutations::SetMetafieldMutation,
       fulfillment_create: ShopifyGraphqlHelper::Mutations::FulfillmentCreateMutation,
       collection_create: ShopifyGraphqlHelper::Mutations::CollectionCreateMutation,
-      metafield_definition_create:  ShopifyGraphqlHelper::Mutations::MetafieldDefinitionCreateMutation
+      metafield_definition_create: ShopifyGraphqlHelper::Mutations::MetafieldDefinitionCreateMutation
     }.freeze
 
     DEFAULT_QUERY_VARIABLES = {

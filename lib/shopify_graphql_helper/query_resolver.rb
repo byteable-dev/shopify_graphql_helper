@@ -30,6 +30,7 @@ module ShopifyGraphqlHelper
       product_variant_create: ShopifyGraphqlHelper::Mutations::ProductVariantCreateMutation,
       product_variant_bulk_update: ShopifyGraphqlHelper::Mutations::ProductVariantBulkUpdateMutation,
       product_variant_bulk_create: ShopifyGraphqlHelper::Mutations::ProductVariantBulkCreateMutation,
+      file_create: ShopifyGraphqlHelper::Mutations::FileCreateMutation,
       inventory_item_update: ShopifyGraphqlHelper::Mutations::InventoryItemUpdateMutation,
       inventory_adjustment: ShopifyGraphqlHelper::Mutations::InventoryAdjustQuantitiesMutation,
       activate_inventory_item: ShopifyGraphqlHelper::Mutations::ActivateInventoryItemMutation,

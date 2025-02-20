@@ -17,6 +17,17 @@ module ShopifyGraphqlHelper
             note
             discountCodes
             currencyCode
+            totalDiscounts
+            totalDiscountsSet{
+              presentmentMoney {
+                amount
+                currencyCode
+              }
+              shopMoney{
+                amount
+                currencyCode
+              }
+            }
             totalPriceSet{
               presentmentMoney {
                 amount

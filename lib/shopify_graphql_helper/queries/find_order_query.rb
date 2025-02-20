@@ -134,6 +134,24 @@ module ShopifyGraphqlHelper
                     currencyCode
                   }
                 }
+                discountAllocations {
+                  discountApplication{
+                    targetSelection
+                    targetType
+                    index
+                    allocationMethod
+                    value{
+                      ... on MoneyV2 {
+                        amount
+                        currencyCode
+                      }
+                    }
+                  }
+                  allocatedAmount {
+                    amount
+                    currencyCode
+                  }
+                }
                 totalDiscountSet {
                   presentmentMoney {
                     amount

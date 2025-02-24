@@ -16,6 +16,7 @@ module ShopifyGraphqlHelper
       find_order: ShopifyGraphqlHelper::Queries::FindOrderQuery,
       find_location: ShopifyGraphqlHelper::Queries::FindLocationQuery,
       find_collection_by_title: ShopifyGraphqlHelper::Queries::FindCollectionByTitleQuery,
+      find_file_by_name: ShopifyGraphqlHelper::Queries::FindFileByNameQuery,
       staff_members: ShopifyGraphqlHelper::Queries::StaffMembersQuery,
       orders: ShopifyGraphqlHelper::Queries::OrdersQuery,
       fulfillment_orders: ShopifyGraphqlHelper::Queries::FulfillmentOrdersQuery,

@@ -4,8 +4,8 @@ module ShopifyGraphqlHelper
   module Queries
     class OrdersQuery
       QUERY = <<~QUERY
-        query($numOrders: Int!, $cursor: String) {
-          orders(first: $numOrders, after: $cursor) {
+        query($numOrders: Int!, $cursor: String, $query: String) {
+          orders(first: $numOrders, after: $cursor, query: $query, sortKey: CREATED_AT) {
             nodes {
               id
               legacyResourceId

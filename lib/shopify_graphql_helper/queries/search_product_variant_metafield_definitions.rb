@@ -12,6 +12,10 @@ module ShopifyGraphqlHelper
               description
               key
               namespace
+              type{
+                name
+                category
+              }
               ownerType
               metafields(first: 20){
                 nodes{

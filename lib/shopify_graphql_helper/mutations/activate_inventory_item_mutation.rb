@@ -4,20 +4,19 @@ module ShopifyGraphqlHelper
   module Mutations
     class ActivateInventoryItemMutation
       MUTATION = <<~QUERY
-        mutation inventoryAdjustQuantities($input: InventoryAdjustQuantitiesInput!) {
-          inventoryAdjustQuantities(input: $input) {
-            userErrors {
-              code
-              field
-              message
-            }
-            inventoryAdjustmentGroup {
-              createdAt
-              reason
-              changes {
+        mutation ActivateInventoryItem($inventoryItemId: ID!, $locationId: ID!, $available: Int) {
+          inventoryActivate(inventoryItemId: $inventoryItemId, locationId: $locationId, available: $available) {
+            inventoryLevel {
+              id
+              quantities(names: ["available"]) {
                 name
-                delta
-                quantityAfterChange
+                quantity
+              }
+              item {
+                id
+              }
+              location {
+                id
               }
             }
           }

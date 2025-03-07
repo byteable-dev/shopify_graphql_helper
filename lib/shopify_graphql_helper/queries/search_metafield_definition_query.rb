@@ -4,7 +4,7 @@ module ShopifyGraphqlHelper
   module Queries
     class SearchMetafieldDefinitionQuery
       QUERY = <<~QUERY
-        query($query: String!, $ownerType: MetafieldOwnerType) {
+        query($query: String!, $ownerType: MetafieldOwnerType!) {
           metafieldDefinitions(first: 50, ownerType: $ownerType, query: $query) {
             nodes {
               id

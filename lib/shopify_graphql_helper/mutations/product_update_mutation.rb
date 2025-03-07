@@ -4,8 +4,8 @@ module ShopifyGraphqlHelper
   module Mutations
     class ProductUpdateMutation
       MUTATION = <<~QUERY
-        mutation ProductUpdate($input: ProductInput!) {
-          productUpdate(input: $input) {
+        mutation ProductUpdate($input: ProductInput!, $media: [CreateMediaInput!]) {
+          productUpdate(input: $input, media: $media) {
             product {
               id
               title

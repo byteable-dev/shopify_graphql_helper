@@ -97,6 +97,22 @@ module ShopifyGraphqlHelper
                     ownerType
                     description
                     jsonValue
+                    definition{
+                      name
+                      type{
+                        category
+                        name
+                        supportedValidations{
+                          name
+                          type
+                        }
+                      }
+                      validations{
+                        name
+                        type
+                        value
+                      }
+                    }
                   }
                 }
                 inventoryItem{

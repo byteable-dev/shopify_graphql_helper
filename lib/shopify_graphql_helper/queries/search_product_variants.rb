@@ -18,6 +18,7 @@ module ShopifyGraphqlHelper
                 barcode
                 price
                 compareAtPrice
+                taxable
                 selectedOptions{
                   name
                   value

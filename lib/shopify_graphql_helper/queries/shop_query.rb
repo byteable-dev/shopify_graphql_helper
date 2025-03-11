@@ -16,7 +16,6 @@ module ShopifyGraphqlHelper
             }
             myshopifyDomain
             email
-            shopOwnerName
             currencyCode
             ianaTimezone
           }

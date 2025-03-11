@@ -9,7 +9,10 @@ module ShopifyGraphqlHelper
             inventoryItem {
               inventoryLevels(first: 50) {
                 nodes {
-                  available
+                  quantities(names: ["available"]) {
+                    name
+                    quantity
+                  }
                   location {
                     id
                     name

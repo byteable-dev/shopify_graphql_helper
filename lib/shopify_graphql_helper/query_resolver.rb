@@ -23,7 +23,8 @@ module ShopifyGraphqlHelper
       locations: ShopifyGraphqlHelper::Queries::LocationsQuery,
       inventory_items: ShopifyGraphqlHelper::Queries::InventoryItemsQuery,
       search_product_variant_metfeild_definitions: ShopifyGraphqlHelper::Queries::SearchProductVariantMetafieldDefiniations,
-      search_metafield_definition: ShopifyGraphqlHelper::Queries::SearchMetafieldDefinitionQuery
+      search_metafield_definition: ShopifyGraphqlHelper::Queries::SearchMetafieldDefinitionQuery,
+      inventory_levels: ShopifyGraphqlHelper::Queries::InventoryLevelsQuery
     }.freeze
 
     MUTATIONS = {

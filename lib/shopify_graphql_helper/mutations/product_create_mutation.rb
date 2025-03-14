@@ -9,6 +9,7 @@ module ShopifyGraphqlHelper
             product {
               id
               title
+              descriptionHtml
               options {
                 id
                 name

@@ -71,6 +71,8 @@ module ShopifyGraphqlHelper
                 }
                 product{
                   id
+                  title
+                  descriptionHtml
                   options(first: 20) {
                     id
                     position

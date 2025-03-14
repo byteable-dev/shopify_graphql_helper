@@ -13,7 +13,7 @@ module ShopifyGraphqlHelper
               digest
               locale
             }
-            translations(locale: $locale || "en") {
+            translations(locale: $locale) {
               key
               value
             }

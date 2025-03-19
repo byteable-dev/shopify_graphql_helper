@@ -44,6 +44,7 @@ module ShopifyGraphqlHelper
       set_metafield: ShopifyGraphqlHelper::Mutations::SetMetafieldMutation,
       fulfillment_create: ShopifyGraphqlHelper::Mutations::FulfillmentCreateMutation,
       collection_create: ShopifyGraphqlHelper::Mutations::CollectionCreateMutation,
+      collection_update: ShopifyGraphqlHelper::Mutations::CollectionUpdateMutation,
       metafield_definition_create: ShopifyGraphqlHelper::Mutations::MetafieldDefinitionCreateMutation,
       product_options_create: ShopifyGraphqlHelper::Mutations::OptionCreateMutation,
       register_translation: ShopifyGraphqlHelper::Mutations::RegisterTranslationMutation

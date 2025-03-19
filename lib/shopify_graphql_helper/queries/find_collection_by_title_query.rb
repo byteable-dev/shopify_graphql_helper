@@ -9,6 +9,8 @@ module ShopifyGraphqlHelper
             nodes {
               id
               title
+              description
+              descriptionHtml
               handle
               updatedAt
               sortOrder

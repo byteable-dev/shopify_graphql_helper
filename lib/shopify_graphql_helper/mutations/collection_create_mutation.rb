@@ -9,6 +9,8 @@ module ShopifyGraphqlHelper
             collection {
               id
               title
+              description
+              descriptionHtml
               handle
               metafields(first: 3) {
                 edges {

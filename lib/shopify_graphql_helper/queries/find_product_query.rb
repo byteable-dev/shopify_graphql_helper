@@ -177,6 +177,8 @@ module ShopifyGraphqlHelper
               nodes {
                 id
                 title
+                description
+                descriptionHtml
               }
             }
           }

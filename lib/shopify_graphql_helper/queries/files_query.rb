@@ -18,6 +18,18 @@ module ShopifyGraphqlHelper
                 }
                 status
               }
+              ... on MediaImage {
+                image {
+                  url
+                }
+              }
+              ... on Video {
+                duration
+                mediaContentType
+                originalSource { 
+                  url
+                }
+              }
             }
             pageInfo{
               hasPreviousPage

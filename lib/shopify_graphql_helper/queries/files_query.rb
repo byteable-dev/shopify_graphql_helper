@@ -19,6 +19,7 @@ module ShopifyGraphqlHelper
                 status
               }
               ... on MediaImage {
+                mediaContentType
                 image {
                   url
                 }

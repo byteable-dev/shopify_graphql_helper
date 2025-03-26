@@ -12,6 +12,11 @@ module ShopifyGraphqlHelper
               alt
               createdAt
             }
+            userErrors {
+              code
+              field
+              message
+            }
           }
         }
       QUERY

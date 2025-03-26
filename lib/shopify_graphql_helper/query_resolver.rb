@@ -48,7 +48,8 @@ module ShopifyGraphqlHelper
       collection_update: ShopifyGraphqlHelper::Mutations::CollectionUpdateMutation,
       metafield_definition_create: ShopifyGraphqlHelper::Mutations::MetafieldDefinitionCreateMutation,
       product_options_create: ShopifyGraphqlHelper::Mutations::OptionCreateMutation,
-      register_translation: ShopifyGraphqlHelper::Mutations::RegisterTranslationMutation
+      register_translation: ShopifyGraphqlHelper::Mutations::RegisterTranslationMutation,
+      staged_upload_create: ShopifyGraphqlHelper::Mutations::StagedUploadCreateMutation,
     }.freeze
 
     DEFAULT_QUERY_VARIABLES = {

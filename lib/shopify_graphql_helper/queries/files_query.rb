@@ -19,16 +19,27 @@ module ShopifyGraphqlHelper
                 status
               }
               ... on MediaImage {
+                mimeType
                 mediaContentType
+                originalSource {
+                  url
+                  fileSize
+                  }
                 image {
                   url
                 }
               }
               ... on Video {
+                filename
                 duration
                 mediaContentType
-                originalSource { 
+                originalSource {
                   url
+                  fileSize
+                  format
+                  mimeType
+                  height
+                  width
                 }
               }
             }

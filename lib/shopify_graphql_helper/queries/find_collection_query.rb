@@ -10,11 +10,13 @@ module ShopifyGraphqlHelper
             title
             description
             descriptionHtml
+            templateSuffix
             handle
             updatedAt
             sortOrder
             image {
               url
+              originalSrc
             }
             products(first: 50) {
               nodes {

@@ -52,6 +52,7 @@ module ShopifyGraphqlHelper
       register_translation: ShopifyGraphqlHelper::Mutations::RegisterTranslationMutation,
       staged_upload_create: ShopifyGraphqlHelper::Mutations::StagedUploadCreateMutation,
       publish_collection: ShopifyGraphqlHelper::Mutations::PublishCollectionMutation,
+      unpublish_collection: ShopifyGraphqlHelper::Mutations::UnpublishCollectionMutation,
     }.freeze
 
     DEFAULT_QUERY_VARIABLES = {

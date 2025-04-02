@@ -14,6 +14,19 @@ module ShopifyGraphqlHelper
               handle
               updatedAt
               sortOrder
+              seo{
+                description
+                title
+              }
+              resourcePublications(onlyPublished: true) {
+                nodes{
+                  isPublished
+                  publication{
+                    autoPublish
+                    name
+                  }
+                }
+              }
               ruleSet{
                 appliedDisjunctively
                 rules{

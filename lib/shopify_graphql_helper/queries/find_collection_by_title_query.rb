@@ -18,7 +18,7 @@ module ShopifyGraphqlHelper
                 description
                 title
               }
-              resourcePublications(first: 20, onlyPublished: true) {
+              resourcePublications(first: 20) {
                 nodes{
                   isPublished
                   publication{

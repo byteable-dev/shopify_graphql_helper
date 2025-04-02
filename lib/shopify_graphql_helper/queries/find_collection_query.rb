@@ -18,6 +18,19 @@ module ShopifyGraphqlHelper
               url
               originalSrc
             }
+            seo{
+              description
+              title
+            }
+            resourcePublications(onlyPublished: true) {
+              nodes{
+                isPublished
+                publication{
+                  autoPublish
+                  name
+                }
+              }
+            }
             products(first: 50) {
               nodes {
                 id

@@ -2,7 +2,7 @@
 
 module ShopifyGraphqlHelper
   module Mutations
-    class UnPublishCollectionMutation
+    class UnpublishCollectionMutation
       MUTATION = <<~QUERY
         mutation publishableUnpublish($id: ID!, $input: [PublicationInput!]!) {
           publishableUnpublish(id: $id, input: $input) {

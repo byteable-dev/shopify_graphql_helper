@@ -24,6 +24,7 @@ module ShopifyGraphqlHelper
                   publication{
                     autoPublish
                     name
+                    id
                   }
                 }
               }

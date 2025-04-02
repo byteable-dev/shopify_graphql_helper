@@ -27,7 +27,8 @@ module ShopifyGraphqlHelper
       search_metafield_definition: ShopifyGraphqlHelper::Queries::SearchMetafieldDefinitionQuery,
       inventory_levels: ShopifyGraphqlHelper::Queries::InventoryLevelsQuery,
       shop_locales: ShopifyGraphqlHelper::Queries::ShopLocalesQuery,
-      translatable_resource: ShopifyGraphqlHelper::Queries::TranslatableResourceQuery
+      translatable_resource: ShopifyGraphqlHelper::Queries::TranslatableResourceQuery,
+      publications: ShopifyGraphqlHelper::Queries::PublicationsQuery,
 
     }.freeze
 
@@ -50,6 +51,7 @@ module ShopifyGraphqlHelper
       product_options_create: ShopifyGraphqlHelper::Mutations::OptionCreateMutation,
       register_translation: ShopifyGraphqlHelper::Mutations::RegisterTranslationMutation,
       staged_upload_create: ShopifyGraphqlHelper::Mutations::StagedUploadCreateMutation,
+      publish_collection: ShopifyGraphqlHelper::Mutations::PublishCollectionMutation,
     }.freeze
 
     DEFAULT_QUERY_VARIABLES = {

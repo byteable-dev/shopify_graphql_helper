@@ -10,6 +10,25 @@ module ShopifyGraphqlHelper
               id
               title
               descriptionHtml
+              tags
+              publishedAt
+              handle
+              productType
+              vendor
+              status
+              media(first: 20){
+                nodes{
+                  id
+                  alt
+                  mediaContentType
+                  preview {
+                    image {
+                      id
+                      url
+                    }
+                  }
+                }
+              }
               options {
                 id
                 name

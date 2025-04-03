@@ -17,12 +17,16 @@ module ShopifyGraphqlHelper
               vendor
               status
               templateSuffix
-              media(first: 10) {
-                nodes {
+              media(first: 20){
+                nodes{
+                  id
                   alt
                   mediaContentType
                   preview {
-                    status
+                    image {
+                      id
+                      url
+                    }
                   }
                 }
               }

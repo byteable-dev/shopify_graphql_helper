@@ -28,7 +28,7 @@ module ShopifyGraphqlHelper
       inventory_levels: ShopifyGraphqlHelper::Queries::InventoryLevelsQuery,
       shop_locales: ShopifyGraphqlHelper::Queries::ShopLocalesQuery,
       translatable_resource: ShopifyGraphqlHelper::Queries::TranslatableResourceQuery,
-      publications: ShopifyGraphqlHelper::Queries::PublicationsQuery,
+      publications: ShopifyGraphqlHelper::Queries::PublicationsQuery
 
     }.freeze
 
@@ -53,6 +53,8 @@ module ShopifyGraphqlHelper
       staged_upload_create: ShopifyGraphqlHelper::Mutations::StagedUploadCreateMutation,
       publish_collection: ShopifyGraphqlHelper::Mutations::PublishCollectionMutation,
       unpublish_collection: ShopifyGraphqlHelper::Mutations::UnpublishCollectionMutation,
+      product_option_create: ShopifyGraphqlHelper::Mutations::ProductOptionCreateMutation,
+      product_option_update: ShopifyGraphqlHelper::Mutations::ProductOptionUpdateMutation
     }.freeze
 
     DEFAULT_QUERY_VARIABLES = {

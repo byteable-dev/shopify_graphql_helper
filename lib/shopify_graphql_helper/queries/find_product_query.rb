@@ -69,7 +69,7 @@ module ShopifyGraphqlHelper
                 }
               }
             }
-            variants(first: 10) {
+            variants(first: 20) {
               nodes {
                 id
                 legacyResourceId

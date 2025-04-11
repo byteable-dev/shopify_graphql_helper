@@ -12,6 +12,10 @@ module ShopifyGraphqlHelper
               description
               descriptionHtml
               handle
+              seo{
+                description
+                title
+              }
             }
             userErrors {
               field

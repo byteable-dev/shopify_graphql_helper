@@ -190,6 +190,10 @@ module ShopifyGraphqlHelper
                 nodes{
                   id
                   quantity
+                  location {
+                    id
+                    name
+                  }
                   lineItem{
                     id
                     sku

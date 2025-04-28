@@ -73,6 +73,21 @@ module ShopifyGraphqlHelper
               zip
               countryCode
             }
+            shippingAddress{
+              address1
+              address2
+              city
+              company
+              country
+              countryCodeV2
+              firstName
+              lastName
+              name
+              phone
+              timeZone
+              zip
+              countryCode
+            }
             app {
               id
             }

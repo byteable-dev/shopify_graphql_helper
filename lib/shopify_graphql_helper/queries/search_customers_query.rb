@@ -14,7 +14,6 @@ module ShopifyGraphqlHelper
               phone
               createdAt
               updatedAt
-              acceptsMarketing
               emailMarketingConsent {
                 marketingState
                 marketingOptInLevel
@@ -39,8 +38,6 @@ module ShopifyGraphqlHelper
                 provinceCode
                 zip
               }
-              ordersCount
-              totalSpent
               tags
               metafields(first: 20) {
                 nodes {

@@ -28,8 +28,8 @@ module ShopifyGraphqlHelper
       inventory_levels: ShopifyGraphqlHelper::Queries::InventoryLevelsQuery,
       shop_locales: ShopifyGraphqlHelper::Queries::ShopLocalesQuery,
       translatable_resource: ShopifyGraphqlHelper::Queries::TranslatableResourceQuery,
-      publications: ShopifyGraphqlHelper::Queries::PublicationsQuery
-
+      publications: ShopifyGraphqlHelper::Queries::PublicationsQuery,
+      search_customers: ShopifyGraphqlHelper::Queries::SearchCustomersQuery
     }.freeze
 
     MUTATIONS = {

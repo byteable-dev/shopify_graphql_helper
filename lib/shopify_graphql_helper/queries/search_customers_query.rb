@@ -51,6 +51,18 @@ module ShopifyGraphqlHelper
                   type
                 }
               }
+              events(first: 5, sortKey: CREATED_AT, reverse: true) {
+                nodes {
+                  id
+                  action
+                  appTitle
+                  attributeToApp
+                  attributeToUser
+                  createdAt
+                  criticalAlert
+                  message
+                }
+              }
             }
             pageInfo {
               hasNextPage

@@ -12,6 +12,7 @@ module ShopifyGraphqlHelper
                   id
                   firstName
                   lastName
+                  email
                 }
               }
             }

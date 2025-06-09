@@ -5,7 +5,7 @@ module ShopifyGraphqlHelper
     class FindFileByNameQuery
       QUERY = <<~QUERY
         query($query: String!) {
-          files(first: 1, query: $query) {
+          files(first: 10, query: $query) {
             nodes{
               id
               alt

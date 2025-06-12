@@ -58,6 +58,27 @@ module ShopifyGraphqlHelper
                 currencyCode
               }
             }
+            currentSubtotalPriceSet{
+              presentmentMoney {
+                amount
+                currencyCode
+              }
+              shopMoney{
+                amount
+                currencyCode
+              }
+            }
+            subtotalPriceSet{
+              presentmentMoney {
+                amount
+                currencyCode
+              }
+              shopMoney{
+                amount
+                currencyCode
+              }
+            }
+            subtotalLineItemsQuantity
             billingAddress{
               address1
               address2
@@ -97,6 +118,7 @@ module ShopifyGraphqlHelper
               lastName
               displayName
               email
+              numberOfOrders
               defaultAddress{
                 address1
                 address2
@@ -117,6 +139,7 @@ module ShopifyGraphqlHelper
             staffMember{
               id
               email
+              name
             }
             paymentGatewayNames
             lineItems(first: 250) {

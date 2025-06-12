@@ -112,6 +112,14 @@ module ShopifyGraphqlHelper
             app {
               id
             }
+            channelInformation{
+              id
+              channelId
+              channelDefinition {
+                id
+                channelName
+              }
+            }
             customer {
               id
               firstName

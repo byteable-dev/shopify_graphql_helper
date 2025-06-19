@@ -215,7 +215,10 @@ module ShopifyGraphqlHelper
                 }
                 product {
                   id
+                  title
                   legacyResourceId
+                  vendor
+                  productType
                 }
                 customAttributes{
                   key

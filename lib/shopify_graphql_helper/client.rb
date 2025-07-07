@@ -11,6 +11,7 @@ module ShopifyGraphqlHelper
     def query(query:, variables: {})
       graphql_client.query(query: query, variables: variables)
     rescue ShopifyAPI::Errors::HttpResponseError => exception
+      Rails.logger.error("GraphQL Query Error: #{exception.message}")
       handle_error(exception)
     end
 

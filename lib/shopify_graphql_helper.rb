@@ -13,6 +13,6 @@ module ShopifyGraphqlHelper
   Dir[File.join(__dir__, 'shopify_graphql_helper/mutations/**/*.rb')].each { |file| require file }
 end
 
-require_relative 'shopify_graphql_helper/net_http_patch'
+# require_relative 'shopify_graphql_helper/net_http_patch'
 require 'shopify_graphql_helper/client'
 require 'shopify_graphql_helper/query_resolver'

@@ -41,6 +41,7 @@ module ShopifyGraphqlHelper
       file_create: ShopifyGraphqlHelper::Mutations::FileCreateMutation,
       inventory_item_update: ShopifyGraphqlHelper::Mutations::InventoryItemUpdateMutation,
       inventory_adjustment: ShopifyGraphqlHelper::Mutations::InventoryAdjustQuantitiesMutation,
+      inventory_set_quantities: ShopifyGraphqlHelper::Mutations::InventorySetQuantitiesMutation,
       activate_inventory_item: ShopifyGraphqlHelper::Mutations::ActivateInventoryItemMutation,
       update_order_metafield: ShopifyGraphqlHelper::Mutations::UpdateOrderMetafieldsMutation,
       set_metafield: ShopifyGraphqlHelper::Mutations::SetMetafieldMutation,

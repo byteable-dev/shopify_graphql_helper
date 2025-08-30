@@ -117,6 +117,7 @@ module ShopifyGraphqlHelper
               }
               app {
                 id
+                name
               }
               customer {
                 id

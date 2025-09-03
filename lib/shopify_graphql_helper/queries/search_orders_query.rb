@@ -4,8 +4,8 @@ module ShopifyGraphqlHelper
   module Queries
     class SearchOrdersQuery
       QUERY = <<~QUERY
-        query($query: String!) {
-          orders(first: 10, query: $query) {
+        query($query: String!, $first: Int = 50, $after: String) {
+          orders(first: $first, after: $after, query: $query) {
             nodes {
               id
               legacyResourceId
@@ -351,6 +351,10 @@ module ShopifyGraphqlHelper
                   value
                 }
               }
+            }
+            pageInfo {
+              hasNextPage
+              endCursor
             }
           }
         }

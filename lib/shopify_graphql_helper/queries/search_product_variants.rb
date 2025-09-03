@@ -4,8 +4,8 @@ module ShopifyGraphqlHelper
   module Queries
     class SearchProductVariants
       QUERY = <<~QUERY
-        query($query: String!) {
-          productVariants(first: 1, query: $query) {
+        query($query: String!, $first: Int = 50, $after: String) {
+          productVariants(first: $first, after: $after, query: $query) {
             edges {
               node {
                 id
@@ -120,6 +120,10 @@ module ShopifyGraphqlHelper
                   }
                 }
               }
+            }
+            pageInfo {
+              hasNextPage
+              endCursor
             }
           }
         }

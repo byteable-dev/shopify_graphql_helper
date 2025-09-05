@@ -220,6 +220,7 @@ module ShopifyGraphqlHelper
                   product {
                     id
                     legacyResourceId
+                    productType
                     category{
                       id
                       name

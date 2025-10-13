@@ -27,6 +27,11 @@ module ShopifyGraphqlHelper
                       id
                       legacyResourceId
                       sku
+                      displayName
+                      product{
+                        title
+                        productType
+                      }
                     }
                   }
                   location{
